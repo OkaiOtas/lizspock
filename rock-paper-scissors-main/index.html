@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <title>pedra papel tesoura lagarto spock</title>
+
+</head>
+
+<body id="background">
+
+  <header class="scoreboard">
+    <div class="scoreboard__container container">
+
+      <picture>
+        <img src="./assets/images/logo-bonus.svg" alt="Logo">
+      </picture>
+
+      <div class="scoreboard__points medium--font">
+        <span class="scoreboard__points--title">score</span>
+        <div class="scoreboard__counter--js large--font">0</div>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="cards cards-js container">
+      <div class="cards__container">
+        <button class="cards__element cards__element--js cards__element--scissors">
+          <img class="cards__img--js" src="./assets/images/icon-scissors.svg" alt="scissors">
+        </button>
+        <button class="cards__element cards__element--js cards__element--paper">
+          <img src="./assets/images/icon-paper.svg" alt="paper">
+        </button>
+        <button class="cards__element cards__element--js cards__element--rock">
+          <img src="./assets/images/icon-rock.svg" alt="rock">
+        </button>
+        <button class="cards__element cards__element--js cards__element--lizard">
+          <img src="./assets/images/icon-lizard.svg" alt="lizard">
+        </button>
+        <button class="cards__element cards__element--js cards__element--spock">
+          <img src="./assets/images/icon-spock.svg" alt="spock">
+        </button>
+      </div>
+
+      <div class="cards__panel">  
+        <div class="cards__chosen cards__chosen--js large--font">?</div>
+        <button class="cards__panel--btn white--button medium--font">Start</button>
+      </div>
+    </section>
+    
+    <section  class="result result-js container hidden">
+
+      <div class="result__card--player">
+        <h1 class="result__card--title medium--font">You Picked</h1>
+        <div class="result__cards card__player--js"></div>
+      </div>
+      
+      <div class="result__card--house">
+        <h1 class="result__card--title medium--font">The House</h1>
+        <div class="result__cards card__house--js"></div>
+      </div>
+      
+      <div class="result__status">
+        <h1 class="status__title status__title--js large--font">You Win</h1>
+        <button class="status__button status__button--js  white--button medium--font">Play again</button>
+      </div>
+    </section>
+
+    <section class="rules">
+      <button class="rules__button--open small--font" onclick="openModal()">Rules</button>
+
+      <div class="rules__modal--conatiner rules__modal--js hidden">
+        <div class="rules__modal">
+          <button onclick="closeModal()" class="rules__button--close large--font" >x</button>
+          <div class="rules__modal--img" >
+            <img src="./assets/images/image-rules-bonus.svg" alt="rules">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="./assets/js/index.js"></script>
+
+  
+</body>
+
+</html>
